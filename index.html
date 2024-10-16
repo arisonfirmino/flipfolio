@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Arison Firmino | Hover Card</title>
+  </head>
+  <body>
+    <main class="flex min-h-screen w-full items-center justify-center">
+      <div class="h-[600px] w-[400px]" style="perspective: 1000px">
+        <div
+          id="card-inner"
+          class="relative h-full w-full transition-transform duration-1000"
+          style="transform-style: preserve-3d"
+        >
+          <div class="front">
+            <header class="section flex h-40 gap-2.5">
+              <div class="flex flex-col items-center gap-2.5">
+                <img
+                  src="public/IMG.jpg"
+                  alt="Arison Firmino"
+                  class="max-h-14 min-h-14 min-w-14 max-w-14 rounded-full"
+                />
+                <hr class="h-full w-0 border border-[#336bfe]" />
+                <a
+                  href="https://www.instagram.com/arisonfirmino"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="flex min-h-6 min-w-6 items-center justify-center rounded-full bg-[#336bfe] active:bg-gray-400"
+                >
+                  <img src="icons/instagram-icon.svg" alt="Instagram Icon" />
+                </a>
+              </div>
+
+              <div class="flex w-full flex-col justify-between">
+                <div class="flex w-full items-center justify-between">
+                  <div>
+                    <h2 class="kantumruy-pro text-xl font-bold">
+                      Arison Firmino
+                    </h2>
+                    <p class="text-sm text-[#9ca3af]">
+                      Desenvolvedor Fullstack
+                    </p>
+                  </div>
+                  <a
+                    href="https://drive.google.com/file/d/1UG9FvmjjycJT4h-VOqevduLuglOjhWqi/view?usp=sharing"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="flex h-10 w-10 items-center justify-center rounded-full bg-[#336bfe] active:bg-gray-400"
+                  >
+                    <img src="icons/pdf-icon.svg" alt="PDF Icon" />
+                  </a>
+                </div>
+
+                <div class="flex justify-between">
+                  <a
+                    href="https://arison-dev.vercel.app"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="item"
+                  >
+                    <img src="icons/globe-icon.svg" alt="Globe Icon" />
+                  </a>
+                  <a
+                    href="mailto:arisonfirmino.dev@gmail.com"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="item"
+                  >
+                    <img src="icons/mail-icon.svg" alt="E-mail Icon" />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/arisonfirmino"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="item"
+                  >
+                    <img src="icons/linkedin-icon.svg" alt="LinkedIn Icon" />
+                  </a>
+                  <a
+                    href="https://github.com/arisonfirmino"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="item"
+                  >
+                    <img src="icons/github-icon.svg" alt="GitHub Icon" />
+                  </a>
+                </div>
+              </div>
+            </header>
+
+            <div class="space-y-1">
+              <h3 class="kantumruy-pro font-bold uppercase text-[#336bfe]">
+                Sobre mim
+              </h3>
+              <p class="text-sm text-gray-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi
+                aliquid optio eaque itaque? Perspiciatis fuga magnam qui
+                inventore? In mollitia veritatis voluptates ipsum blanditiis eum
+                molestias obcaecati tenetur facere aut.
+              </p>
+            </div>
+
+            <div class="education_card section">
+              <div class="item">
+                <img src="icons/building-icon.svg" alt="Building Icon" />
+              </div>
+              <div>
+                <h3>****************************</h3>
+                <h4>***********</h4>
+                <p>**** - ****</p>
+              </div>
+            </div>
+
+            <div class="experience_card section">
+              <div class="item">
+                <img src="icons/graduation-icon.svg" alt="Graduation Icon" />
+              </div>
+              <div>
+                <h3>****************************</h3>
+                <h4>***********</h4>
+                <p>**** - ****</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-2.5">
+              <hr class="w-full border-[#336bfe]" />
+              <button
+                id="see-more-button"
+                class="text-nowrap text-sm text-[#336bfe] active:text-gray-400"
+              >
+                ver mais
+              </button>
+            </div>
+          </div>
+
+          <div class="back">
+            <div class="flex justify-between">
+              <button
+                id="back-button"
+                class="flex h-10 w-10 items-center justify-center rounded-full bg-[#336bfe] active:bg-gray-400"
+              >
+                <img
+                  src="icons/chevron-left-icon.svg"
+                  alt="Chevron Left Icon"
+                />
+              </button>
+
+              <p class="text-xs text-black text-opacity-20">
+                © 2024 Arison. All Rights Reserved
+              </p>
+            </div>
+
+            <div class="space-y-7 text-sm">
+              <blockquote class="flex items-center gap-2.5 text-gray-400">
+                <hr class="h-10 w-0 border-2 border-gray-400" />
+                Sou um entusiasta de programação, sempre motivado a aprender e
+                superar desafios.
+              </blockquote>
+
+              <div class="space-y-2 text-gray-600">
+                <p>👨🏻‍💻 Apaixonado por tecnologia e inovação.</p>
+                <p>🌱 Sempre aprendendo e evoluindo.</p>
+                <p>📫 arisonfirmino.dev@gmail.com</p>
+              </div>
+            </div>
+
+            <section class="section space-y-2.5">
+              <h3 class="kantumruy-pro font-bold uppercase text-[#336bfe]">
+                Projetos
+              </h3>
+
+              <div class="grid grid-cols-5">
+                <a
+                  href="https://text-fy.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="item"
+                >
+                  <img src="icons/textfy-icon.svg" alt="Text.fy Project" />
+                </a>
+                <a
+                  href="https://sendify-six.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="item"
+                >
+                  <img src="icons/sendify-icon.svg" alt="Sendify Project" />
+                </a>
+                <a
+                  href="https://financial-control-omega.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="item"
+                >
+                  <img
+                    src="icons/financial-control-icon.svg"
+                    alt="Financial Control Project"
+                  />
+                </a>
+                <a
+                  href="https://task-hub-lyart-phi.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="item"
+                >
+                  <img src="icons/taskhub-icon.svg" alt="Task Hub Project" />
+                </a>
+                <a
+                  href="https://the-burger-lab.vercel.app"
+                  target="_blank"
+                  rel="noreferrer"
+                  class="item"
+                >
+                  <img src="icons/tbl-icon.svg" alt="The Burger Lab Project" />
+                </a>
+              </div>
+            </section>
+
+            <section class="section space-y-2.5">
+              <h3 class="kantumruy-pro font-bold uppercase text-[#336bfe]">
+                Stack
+              </h3>
+
+              <div class="grid grid-cols-5 gap-3">
+                <span class="item">
+                  <img src="icons/html-icon.svg" alt="HTML Skill" />
+                </span>
+                <span class="item">
+                  <img src="icons/css-icon.svg" alt="CSS Skill" />
+                </span>
+                <span class="item">
+                  <img src="icons/javascript-icon.svg" alt="JavaScript Skill" />
+                </span>
+                <span class="item">
+                  <img src="icons/typescript-icon.svg" alt="TypeScript Skill" />
+                </span>
+                <span class="item">
+                  <img src="icons/react-icon.svg" alt="React Skill" />
+                </span>
+                <span class="item">
+                  <img src="icons/nextjs-icon.svg" alt="Next.js Skill" />
+                </span>
+                <span class="item">
+                  <img src="icons/nodejs-icon.svg" alt="Node.js Skill" />
+                </span>
+                <span class="item">
+                  <img src="icons/mongodb-icon.svg" alt="MongoDB Skill" />
+                </span>
+                <span class="item">
+                  <img src="icons/postgresql-icon.svg" alt="PostgreSQL Skill" />
+                </span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
